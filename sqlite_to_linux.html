@@ -1,0 +1,22 @@
+<h2>Install SQLite on Linux</h2>
+<p>Today, almost all the flavours of Linux OS are being shipped with SQLite. So you just issue the following command to check if you already have SQLite installed on your machine.</p>
+<pre class="result notranslate">
+$sqlite3
+SQLite version 3.7.15.2 2013-01-09 11:53:05
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite&gt;
+</pre>
+<p>If you do not see the above result, then it means you do not have SQLite installed on your Linux machine. Following are the following steps to install SQLite &minus;</p>
+<ul class="list">
+<li><p><b>Step 1</b> &minus; Go to <a target="_blank" rel="nofollow" href="https://www.sqlite.org/download.html">SQLite download page</a> and download sqlite-autoconf-*.tar.gz from source code section.</b></p></li>
+<li><p><b>Step 2</b> &minus; Run the following command &minus;</p></li>
+</ul>
+<pre class="result notranslate">
+$tar xvfz sqlite-autoconf-3071502.tar.gz
+$cd sqlite-autoconf-3071502
+$./configure --prefix=/usr/local
+$make
+$make install
+</pre>
+<p>The above command will end with SQLite installation on your Linux machine. Which you can verify as explained above.</p>
